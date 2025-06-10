@@ -1,3 +1,4 @@
+--Création des tables
 CREATE TABLE Utilisateur(
    ID_user integer,
    Nom VARCHAR(256),
