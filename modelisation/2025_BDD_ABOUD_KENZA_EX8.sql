@@ -4,10 +4,10 @@ CREATE TABLE Disponibilite (
     Date_debut DATE NOT NULL,
     Date_fin DATE NOT NULL,
     CHECK (Date_fin >= Date_debut)
-);
+); /* création de la table disponibilité*/
 
 ALTER TABLE Reservation
-ADD COLUMN ID_disponibilite INTEGER REFERENCES Disponibilite(ID_disponibilite);
+ADD COLUMN ID_disponibilite INTEGER REFERENCES Disponibilite(ID_disponibilite); /* modification de la table en ajoutant une colonne */
 
 SELECT 
     CASE 
